@@ -12,7 +12,7 @@ var ITER = 10000000
 
 
 func main() {
-	rootEntry := tree.Entry{Key:rand.Intn(N)}
+	rootEntry := createEntry()
 	myTree := tree.InitTree(rootEntry)
 	for i:= 0; i<ITER; i++{
 		fmt.Println("-----------------------------------")
